@@ -5,10 +5,18 @@
 }
 
 /* Element Selectors */
-
+body {
+    background-color: beige;
+    color: brown;
+}
 
 /* Class Selectors */
-
+.bg-green {
+    background-color: forestgreen;
+    color: beige;
+}
 
 /* ID Selectors */
-
+#contact {
+    background-color: lightpink;
+}
