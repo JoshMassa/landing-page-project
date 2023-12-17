@@ -20,6 +20,10 @@ body {
     font-family: Garamond, serif;
 }
 
+figure {
+    margin-bottom: 50px;
+}
+
 img {
     height: 300px;
     border-radius: 10%;
@@ -40,6 +44,19 @@ h3 {
 
 nav {
     display: inline;
+}
+
+main {
+    padding-top: 75px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 /* Class Selectors */
@@ -67,8 +84,16 @@ nav {
     padding: 10px 0px 20px;
 }
 
-#header-footer {
+#header {
     padding: 15px;
+    border-bottom: 10px solid lightblue;
+    background-color: rgb(10, 138, 243);
+    color: white;
+}
+
+#footer {
+    padding: 15px;
+    border-top: 10px solid lightblue;
     background-color: rgb(10, 138, 243);
     color: white;
 }
@@ -91,7 +116,6 @@ nav {
     background-color: rgb(10, 138, 243);
     border: 2px solid #000000;
     box-shadow: 5px 5px 5px;
-    
     z-index: 1000;
 }
 
