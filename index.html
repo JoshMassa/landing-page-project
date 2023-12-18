@@ -28,40 +28,40 @@
 			</section>
 			<section id="contact">
 				<h3>Contact Me</h3>
-					<section class="contact-form-container">
-						<form id="form">Contact Form</form>
-							<label for="name">Name:</label>
-							<input type="text" id="name" name="name" required>
+				<section class="contact-form-container">
+					<form id="form">Contact Form</form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
 
-							<label for="email">Email:</label>
-							<input type="email" id="email" name="email" required>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
 
-							<label for="phone">Phone:</label>
-							<input type="tel" id="phone" name="phone" required>
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
 
-							<button id="button" type="button">Submit</button>
+					<button id="button" type="button">Submit</button>
 								
-								<aside id="modal">
-									<p>Your form has been submitted and we will reach out to you as soon as possible!</p>
-									<button onclick="closeModal()">Close</button>
-								</aside>
+					<aside id="modal">
+						<p>Your form has been submitted and we will reach out to you as soon as possible!</p>
+						<button onclick="closeModal()">Close</button>
+					</aside>
 
-								<script>
-									document.addEventListener("DOMContentLoaded", function() {
-										var button = document.getElementById("button");
-										var modalWrapper = document.getElementById("modal");
+					<script>
+						document.addEventListener("DOMContentLoaded", function() {
+							var button = document.getElementById("button");
+							var modalWrapper = document.getElementById("modal");
 										
-										button.addEventListener("click", function() {
-											modalWrapper.style.display = "block";
-										});
-									});
+							button.addEventListener("click", function() {
+								modalWrapper.style.display = "block";
+								});
+							});
 
-									function closeModal() {
-										var modalWrapper = document.getElementById("modal");
-										modalWrapper.style.display = "none";
-									}
-								</script>
-					</section>
+							function closeModal() {
+								var modalWrapper = document.getElementById("modal");
+								modalWrapper.style.display = "none";
+								}
+					</script>
+				</section>
 
 			</section>
 		</main>
