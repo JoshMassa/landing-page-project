@@ -7,6 +7,7 @@
 
 /* Element Selectors */
 a {
+    text-decoration: none;
     color: white;
 }
 
@@ -55,7 +56,7 @@ ul {
 }
 
 li {
-    display: inline-block;
+    display: inline;
     margin-right: 15px;
 }
 
