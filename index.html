@@ -32,7 +32,7 @@
 			<section id="contact">
 				<h3>Contact Me</h3>
 				<section class="contact-form-container">
-					<form id="form">Contact Form</form>
+					<form id="form" autocomplete="off">Contact Form</form>
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="name" placeholder="Enter Your Name" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)">
 
@@ -46,7 +46,7 @@
 								
 					<aside id="modal">
 						<p>Your form has been submitted and we will reach out to you as soon as possible!</p>
-						<button onclick="closeModal()">Close</button>
+						<button onclick="closeModal()" id="closeButton">Close</button>
 					</aside>
 
 					<script>
