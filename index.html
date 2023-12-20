@@ -34,13 +34,13 @@
 				<section class="contact-form-container">
 					<form id="form">Contact Form</form>
 					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" placeholder="Enter Your Name">
+					<input type="text" id="name" name="name" placeholder="Enter Your Name" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)">
 
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" placeholder="Enter Your Email">
+					<input type="email" id="email" name="email" placeholder="Enter Your Email" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)">
 
 					<label for="phone">Phone:</label>
-					<input type="tel" id="phone" name="phone" placeholder="Enter Your Phone #">
+					<input type="tel" id="phone" name="phone" placeholder="Enter Your Phone #" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)">
 
 					<button id="button" type="button">Submit</button>
 								
@@ -53,8 +53,16 @@
 						document.addEventListener("DOMContentLoaded", function() {
 							var button = document.getElementById("button");
 							var modalWrapper = document.getElementById("modal");
+							var form = document.getElementById("form");
+							var nameInput = document.getElementById("name");
+							var emailInput = document.getElementById("email");
+							var phoneInput = document.getElementById("phone");
 										
 							button.addEventListener("click", function() {
+								console.log("Submitted Information:");
+								console.log("Name:", nameInput.value);
+								console.log("Email:", emailInput.value);
+								console.log("Phone:", phoneInput.value);
 								modalWrapper.style.display = "block";
 								});
 							});
@@ -63,6 +71,22 @@
 								var modalWrapper = document.getElementById("modal");
 								modalWrapper.style.display = "none";
 								}
+								
+							function clearPlaceholder(input) {
+								input.placeholder = "";
+							}
+
+							function restorePlaceholder(input) {
+								if (input.value === "") {
+									if (input.id === "name") {
+										input.placeholder = "Enter Your Name";
+									} else if (input.id === "email") {
+										input.placeholder = "Enter Your Email";
+									} else if (input.id === "phone") {
+										input.placeholder = "Enter Your Phone #";
+									}
+								}
+							}
 					</script>
 				</section>
 

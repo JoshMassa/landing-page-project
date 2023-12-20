@@ -86,6 +86,7 @@ ul {
 /* ID Selectors */
 #button {
     margin-top: 10px;
+    padding: 5px;
 }
 
 #contact {
